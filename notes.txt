@@ -1,0 +1,4 @@
+Sign in with Clerk
+Dashboard
+    Include all of the same plans as the native app (just bigger and a bit different)
+    Could do a mobile first design
