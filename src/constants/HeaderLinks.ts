@@ -7,4 +7,8 @@ export const headerLinks = [
     route: "routines",
     name: "Routines",
   },
+  {
+    route: "goals",
+    name: "Goals",
+  },
 ];

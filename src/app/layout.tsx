@@ -24,7 +24,7 @@ export default function RootLayout({
         )}
       >
         <Header />
-        <div className="pt-32 pb-16 flex-grow container mx-auto">
+        <div className="pt-20 pb-16 flex-grow container mx-auto">
           {children}
         </div>
         <Footer />
