@@ -1,9 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card";
-import Image from "next/image";
-import { CiClock1 } from "react-icons/ci";
-import { CiCalendar } from "react-icons/ci";
-import { CiFlag1 } from "react-icons/ci";
+import { CalendarIcon, ClockIcon, FlagIcon } from "@/constants/icons";
 
 export default function Home() {
   return (
@@ -23,7 +20,7 @@ export default function Home() {
             <CardTitle className="text-sm font-medium">
               Recent Workouts
             </CardTitle>
-            <CiClock1 className="w-4 h-4 text-gray-500 dark:text-gray-400" />
+            <ClockIcon className="w-4 h-4 text-gray-500 dark:text-gray-400" />
           </CardHeader>
           <CardContent>
             <div className="text-xl font-bold">5</div>
@@ -35,7 +32,7 @@ export default function Home() {
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
             <CardTitle className="text-sm font-medium">Current Plan</CardTitle>
-            <CiCalendar className="w-4 h-4 text-gray-500 dark:text-gray-400" />
+            <CalendarIcon className="w-4 h-4 text-gray-500 dark:text-gray-400" />
           </CardHeader>
           <CardContent>
             <div className="text-xl font-bold">Full Body Workout</div>
@@ -47,7 +44,7 @@ export default function Home() {
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
             <CardTitle className="text-sm font-medium">Fitness Goals</CardTitle>
-            <CiFlag1 className="w-4 h-4 text-gray-500 dark:text-gray-400" />
+            <FlagIcon className="w-4 h-4 text-gray-500 dark:text-gray-400" />
           </CardHeader>
           <CardContent>
             <div className="text-xl font-bold">Lose 5kg</div>

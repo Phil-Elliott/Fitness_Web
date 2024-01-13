@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import { headerLinks } from "@/constants/HeaderLinks";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { IoFitness } from "react-icons/io5";
+import { headerLinks } from "@/constants/headerLinks";
+import { FitnessIcon } from "@/constants/icons";
 
 const Header = () => {
   return (
@@ -10,7 +10,7 @@ const Header = () => {
       <nav className="container mx-auto flex justify-between items-center">
         <div className="flex">
           <Link href="/" className="flex items-center space-x-2">
-            <IoFitness className="text-2xl text-primary" />
+            <FitnessIcon className="text-2xl text-primary" />
             <p className="text-primary">FitMax</p>
           </Link>
           <div className="hidden sm:flex">
