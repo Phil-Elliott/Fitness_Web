@@ -29,10 +29,10 @@ const workouts = [
 const Workouts = () => {
   return (
     <div className="flex flex-col w-full min-h-screen">
-      <header className="flex items-center justify-between h-16 border-b">
+      <header className="flex items-center justify-between">
         <div className="text-lg font-semibold sm:text-base mr-4">
-          {/* <span className="ml-2">January 12, 2024</span> */}
-          <span className="text-2xl font-bold">{`Today's Workouts`}</span>
+          <span className="font-bold">January 12, 2024</span>
+          {/* <span className="text-2xl font-bold">{`Today's Workouts`}</span> */}
         </div>
         <div className="flex items-center gap-4 md:gap-2 lg:gap-4">
           <Button className="rounded-full text-xl" size="icon" variant="ghost">
@@ -54,6 +54,17 @@ const Workouts = () => {
         </div>
       </header>
       <main className="flex flex-1 flex-col gap-4 py-4 md:gap-8 md:py-10">
+        <span className="text-2xl font-bold">Upcoming Workouts</span>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full">
+          {workouts.map((workout) => (
+            <ActivityCard
+              key={workout.id}
+              title={workout.title}
+              description={workout.description}
+            />
+          ))}
+        </div>
+        <span className="text-2xl font-bold">Activity</span>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full">
           {workouts.map((workout) => (
             <ActivityCard
