@@ -1,27 +1,39 @@
 import React from "react";
+import ActivityCard from "@/components/workouts/ActivityCard";
 import { Button } from "@/components/ui/button";
-import {
-  CardTitle,
-  CardDescription,
-  CardHeader,
-  Card,
-} from "@/components/ui/card";
 import {
   SearchIcon,
   FilterIcon,
   PlusIcon,
-  ActivityIcon,
   CalendarIcon,
-  PlayIcon,
 } from "@/constants/icons";
+import Link from "next/link";
+
+const workouts = [
+  {
+    id: 1,
+    title: "Cardio Blast",
+    description: "30 minutes, 200 calories",
+  },
+  {
+    id: 2,
+    title: "Strength Training",
+    description: "45 minutes, 300 calories",
+  },
+  {
+    id: 3,
+    title: "Yoga Flow",
+    description: "60 minutes, 150 calories",
+  },
+];
 
 const Workouts = () => {
   return (
     <div className="flex flex-col w-full min-h-screen">
-      <header className="flex items-center justify-between h-16 border-b">
+      <header className="flex items-center justify-between">
         <div className="text-lg font-semibold sm:text-base mr-4">
-          {/* <span className="ml-2">January 12, 2024</span> */}
-          <span className="text-2xl font-bold">{`Today's Workouts`}</span>
+          <span className="font-bold">January 12, 2024</span>
+          {/* <span className="text-2xl font-bold">{`Today's Workouts`}</span> */}
         </div>
         <div className="flex items-center gap-4 md:gap-2 lg:gap-4">
           <Button className="rounded-full text-xl" size="icon" variant="ghost">
@@ -36,53 +48,38 @@ const Workouts = () => {
             <CalendarIcon />
             <span className="sr-only">Open calendar</span>
           </Button>
-          <Button className="rounded-full text-xl" size="icon" variant="ghost">
-            <PlusIcon />
-            <span className="sr-only">Add new workout</span>
-          </Button>
+          <Link href="/create-new-workout">
+            <Button
+              className="rounded-full text-xl"
+              size="icon"
+              variant="ghost"
+            >
+              <PlusIcon />
+              <span className="sr-only">Add new workout</span>
+            </Button>
+          </Link>
         </div>
       </header>
       <main className="flex flex-1 flex-col gap-4 py-4 md:gap-8 md:py-10">
+        <span className="text-2xl font-bold">Upcoming Workouts</span>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full">
-          <Card>
-            <CardHeader className="flex flex-row items-center gap-4">
-              <ActivityIcon className="w-8 h-8" />
-              <div className="grid gap-1">
-                <CardTitle>Cardio Blast</CardTitle>
-                <CardDescription>30 minutes, 200 calories</CardDescription>
-              </div>
-              <Button className="ml-auto" size="icon" variant="ghost">
-                <PlayIcon className="w-4 h-4" />
-                <span className="sr-only">Start workout</span>
-              </Button>
-            </CardHeader>
-          </Card>
-          <Card>
-            <CardHeader className="flex flex-row items-center gap-4">
-              <ActivityIcon className="w-8 h-8" />
-              <div className="grid gap-1">
-                <CardTitle>Strength Training</CardTitle>
-                <CardDescription>45 minutes, 300 calories</CardDescription>
-              </div>
-              <Button className="ml-auto" size="icon" variant="ghost">
-                <PlayIcon className="w-4 h-4" />
-                <span className="sr-only">Start workout</span>
-              </Button>
-            </CardHeader>
-          </Card>
-          <Card>
-            <CardHeader className="flex flex-row items-center gap-4">
-              <ActivityIcon className="w-8 h-8" />
-              <div className="grid gap-1">
-                <CardTitle>Yoga Flow</CardTitle>
-                <CardDescription>60 minutes, 150 calories</CardDescription>
-              </div>
-              <Button className="ml-auto" size="icon" variant="ghost">
-                <PlayIcon className="w-4 h-4" />
-                <span className="sr-only">Start workout</span>
-              </Button>
-            </CardHeader>
-          </Card>
+          {workouts.map((workout) => (
+            <ActivityCard
+              key={workout.id}
+              title={workout.title}
+              description={workout.description}
+            />
+          ))}
+        </div>
+        <span className="text-2xl font-bold">Activity</span>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full">
+          {workouts.map((workout) => (
+            <ActivityCard
+              key={workout.id}
+              title={workout.title}
+              description={workout.description}
+            />
+          ))}
         </div>
       </main>
     </div>

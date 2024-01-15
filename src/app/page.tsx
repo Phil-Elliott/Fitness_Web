@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card";
 import { CalendarIcon, ClockIcon, FlagIcon } from "@/constants/icons";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,7 +13,9 @@ export default function Home() {
         <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
           {`Let's get moving and achieve your fitness goals together!`}
         </p>
-        <Button variant="outline">Start a New Workout</Button>
+        <Link href="/create-new-workout">
+          <Button variant="outline">Create a New Workout</Button>
+        </Link>
       </section>
       <section className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         <Card>
