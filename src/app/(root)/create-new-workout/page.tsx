@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 
-const NewWorkout = () => {
+const CreateNewWorkout = () => {
   return (
     <main className="w-full max-w-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <div className="space-y-6">
@@ -111,4 +111,4 @@ const NewWorkout = () => {
   );
 };
 
-export default NewWorkout;
+export default CreateNewWorkout;
