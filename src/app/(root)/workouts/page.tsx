@@ -32,7 +32,7 @@ const Workouts = () => {
     <div className="flex flex-col w-full min-h-screen">
       <header className="flex items-center justify-between">
         <div className="text-lg font-semibold sm:text-base mr-4">
-          <span className="font-bold">January 12, 2024</span>
+          <span className="text-lg font-bold">January 12, 2024</span>
           {/* <span className="text-2xl font-bold">{`Today's Workouts`}</span> */}
         </div>
         <div className="flex items-center gap-4 md:gap-2 lg:gap-4">
