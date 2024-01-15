@@ -7,6 +7,7 @@ import {
   PlusIcon,
   CalendarIcon,
 } from "@/constants/icons";
+import Link from "next/link";
 
 const workouts = [
   {
@@ -47,10 +48,16 @@ const Workouts = () => {
             <CalendarIcon />
             <span className="sr-only">Open calendar</span>
           </Button>
-          <Button className="rounded-full text-xl" size="icon" variant="ghost">
-            <PlusIcon />
-            <span className="sr-only">Add new workout</span>
-          </Button>
+          <Link href="/create-new-workout">
+            <Button
+              className="rounded-full text-xl"
+              size="icon"
+              variant="ghost"
+            >
+              <PlusIcon />
+              <span className="sr-only">Add new workout</span>
+            </Button>
+          </Link>
         </div>
       </header>
       <main className="flex flex-1 flex-col gap-4 py-4 md:gap-8 md:py-10">
