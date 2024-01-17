@@ -38,7 +38,7 @@ const Routines = () => {
             <FilterIcon />
             <span className="sr-only">Filter workouts</span>
           </Button>
-          <Link href="/create-new-workout">
+          <Link href="/create-new-routine">
             <Button
               className="rounded-full text-xl"
               size="icon"
