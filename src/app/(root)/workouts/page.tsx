@@ -1,5 +1,5 @@
 import React from "react";
-import ActivityCard from "@/components/workouts/ActivityCard";
+import WorkoutInfoCard from "@/components/workouts/WorkoutInfoCard";
 import Header from "@/components/workouts/header/Header";
 
 const workouts = [
@@ -28,7 +28,7 @@ const Workouts = () => {
         <span className="text-2xl font-bold">Continue Workout</span>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full">
           {workouts.map((workout) => (
-            <ActivityCard
+            <WorkoutInfoCard
               key={workout.id}
               title={workout.title}
               description={workout.description}
@@ -38,7 +38,7 @@ const Workouts = () => {
         <span className="text-2xl font-bold">Upcoming Workouts</span>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full">
           {workouts.map((workout) => (
-            <ActivityCard
+            <WorkoutInfoCard
               key={workout.id}
               title={workout.title}
               description={workout.description}
@@ -48,7 +48,7 @@ const Workouts = () => {
         <span className="text-2xl font-bold">Activity</span>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full">
           {workouts.map((workout) => (
-            <ActivityCard
+            <WorkoutInfoCard
               key={workout.id}
               title={workout.title}
               description={workout.description}

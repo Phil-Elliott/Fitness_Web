@@ -1,8 +1,6 @@
 import React from "react";
-import ActivityCard from "@/components/workouts/ActivityCard";
-import { Button } from "@/components/ui/button";
-import { SearchIcon, FilterIcon, PlusIcon } from "@/constants/icons";
-import Link from "next/link";
+import RoutineInfoCard from "@/components/routines/RoutineInfoCard";
+import Header from "@/components/routines/Header";
 
 const workouts = [
   {
@@ -25,36 +23,12 @@ const workouts = [
 const Routines = () => {
   return (
     <div className="flex flex-col w-full min-h-screen">
-      <header className="flex items-center justify-between">
-        <div className="text-lg font-semibold sm:text-base mr-4">
-          <span className="text-lg font-bold">Routines</span>
-        </div>
-        <div className="flex items-center gap-4 md:gap-2 lg:gap-4">
-          <Button className="rounded-full text-xl" size="icon" variant="ghost">
-            <SearchIcon />
-            <span className="sr-only">Search workouts</span>
-          </Button>
-          <Button className="rounded-full text-xl" size="icon" variant="ghost">
-            <FilterIcon />
-            <span className="sr-only">Filter workouts</span>
-          </Button>
-          <Link href="/create-new-routine">
-            <Button
-              className="rounded-full text-xl"
-              size="icon"
-              variant="ghost"
-            >
-              <PlusIcon />
-              <span className="sr-only">Add new workout</span>
-            </Button>
-          </Link>
-        </div>
-      </header>
+      <Header />
       <main className="flex flex-1 flex-col gap-4 py-4 md:gap-8 md:py-10">
         <span className="text-2xl font-bold">Current</span>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full">
           {workouts.map((workout) => (
-            <ActivityCard
+            <RoutineInfoCard
               key={workout.id}
               title={workout.title}
               description={workout.description}
@@ -64,7 +38,7 @@ const Routines = () => {
         <span className="text-2xl font-bold">Past</span>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full">
           {workouts.map((workout) => (
-            <ActivityCard
+            <RoutineInfoCard
               key={workout.id}
               title={workout.title}
               description={workout.description}

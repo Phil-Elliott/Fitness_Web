@@ -8,12 +8,12 @@ import {
 } from "@/components/ui/card";
 import { ActivityIcon } from "@/constants/icons";
 
-type ActivityCardProps = {
+type WorkoutInfoCardProps = {
   title: string;
   description: string;
 };
 
-const ActivityCard = ({ title, description }: ActivityCardProps) => {
+const WorkoutInfoCard = ({ title, description }: WorkoutInfoCardProps) => {
   return (
     <Link
       href="/display-past-workout"
@@ -32,7 +32,7 @@ const ActivityCard = ({ title, description }: ActivityCardProps) => {
   );
 };
 
-export default ActivityCard;
+export default WorkoutInfoCard;
 
 /*
 To do
