@@ -1,4 +1,4 @@
-import { IoFilter, IoFitness } from "react-icons/io5";
+import { IoFilter, IoFitness, IoCameraOutline } from "react-icons/io5";
 import { IoIosSearch } from "react-icons/io";
 import { FaPlus } from "react-icons/fa";
 import { FiActivity } from "react-icons/fi";
@@ -13,3 +13,4 @@ export const PlayIcon = CiPlay1;
 export const ClockIcon = CiClock1;
 export const FlagIcon = CiFlag1;
 export const FitnessIcon = IoFitness;
+export const CameraIcon = IoCameraOutline;
