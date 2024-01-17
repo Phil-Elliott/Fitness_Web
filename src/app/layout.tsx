@@ -3,7 +3,6 @@ import { Inter as FontSans } from "next/font/google";
 import Header from "@/components/layout/header/Header";
 
 import { cn } from "@/lib/utils";
-import Footer from "@/components/layout/Footer";
 
 export const fontSans = FontSans({
   subsets: ["latin"],
@@ -27,7 +26,6 @@ export default function RootLayout({
         <div className="pt-20 pb-16 flex-grow container mx-auto">
           {children}
         </div>
-        <Footer />
       </body>
     </html>
   );

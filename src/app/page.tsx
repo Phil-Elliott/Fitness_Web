@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card";
 import { CalendarIcon, ClockIcon, FlagIcon } from "@/constants/icons";
 import Link from "next/link";
 import FitnessCard from "@/components/home/FitnessCard";
@@ -27,7 +26,7 @@ const fitnessCardsData = [
 
 export default function Home() {
   return (
-    <main className="flex min-h-[calc(100vh_-_theme(spacing.16))] flex-1 flex-col gap-4 py-4 md:gap-8 md:py-10">
+    <main className="flex flex-1 flex-col gap-4 py-4 md:gap-8 md:py-10">
       <section className="flex flex-col items-center justify-center space-y-4 text-center">
         <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
           Your Fitness Journey Starts Here
@@ -59,4 +58,7 @@ export default function Home() {
 Could make this into a customizable dashboard
   - User can choose what to display and also can order and drag and drop the cards and expand and minizmize the cards
 
+
+might need to add this back in 
+- min-h-[calc(100vh_-_theme(spacing.16))]
 */
