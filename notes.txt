@@ -7,3 +7,10 @@ Dashboard
 Add redux
 Add Clerk (later after everything works)
 Add shadcdn
+
+
+
+
+
+Could add equipment to the workout
+add option to add a alternative if you don't have the equipment at the exact time
