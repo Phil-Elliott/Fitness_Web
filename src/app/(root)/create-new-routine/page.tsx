@@ -45,6 +45,6 @@ export default CreateNewRoutine;
 
 /*
 
-Need to add a day and possibly a time
+Copy the style of the create new workout page
 
 */
