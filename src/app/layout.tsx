@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import { Inter as FontSans } from "next/font/google";
 import Header from "@/components/layout/header/Header";
+import StoreProvider from "./StoreProvider";
 
 import { cn } from "@/lib/utils";
 
@@ -23,9 +24,11 @@ export default function RootLayout({
         )}
       >
         <Header />
-        <div className="pt-20 pb-16 flex-grow container mx-auto">
-          {children}
-        </div>
+        <StoreProvider>
+          <div className="pt-20 pb-16 flex-grow container mx-auto">
+            {children}
+          </div>
+        </StoreProvider>
       </body>
     </html>
   );
