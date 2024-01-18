@@ -112,3 +112,11 @@ const CreateNewWorkout = () => {
 };
 
 export default CreateNewWorkout;
+
+/*
+
+1) Add a day and possibly a time
+2) If routine - could add a day of the week
+3) Do an add exercise button thats similar to the add workout button in routines
+
+*/
