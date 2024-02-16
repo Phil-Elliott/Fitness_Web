@@ -1,5 +1,7 @@
 "use client";
 
+// This component will be useful if you ever need to move away from Clerk. For now, I can just use the UserButton component from Clerk.
+
 import { useState } from "react";
 import Link from "next/link";
 import { SignOutButton } from "@clerk/nextjs";
