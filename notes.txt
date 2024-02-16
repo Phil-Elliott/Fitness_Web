@@ -1,20 +1,24 @@
-Sign in with Clerk
-Dashboard
-    Include all of the same plans as the native app (just bigger and a bit different)
-    Could do a mobile first design
+1) Figure out how to save new signups
+2) Use react query to fetch the data
+3) connect user profile to the user data in settings
+    https://clerk.com/docs/components/user/user-button
+4) Have the user get directed to the landing page after they sign out
+5) Figure out how to save the user information on the server when the user signs up
 
 
-Add redux
-Add Clerk (later after everything works)
-Add shadcdn
-
-
-
+Maybe just add zusted instead of redux
+Look into t3 and zod
+add testing
 
 
 Could add equipment to the workout
 add option to add a alternative if you don't have the equipment at the exact time
 
 
-add testing
-add redux
+
+
+
+
+
+
+
