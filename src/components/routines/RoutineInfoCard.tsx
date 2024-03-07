@@ -16,7 +16,7 @@ type RoutineInfoCardProps = {
 const RoutineInfoCard = ({ title, description }: RoutineInfoCardProps) => {
   return (
     <Link
-      href="/display-past-workout"
+      href="/display-past-activity"
       className="hover:shadow-lg transition-shadow duration-200 ease-in-out"
     >
       <Card>

@@ -25,7 +25,7 @@ export default function Home() {
                 Your Personal Trainer in your Pocket
               </h1>
               <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Get fit with our easy-to-use fitness app. Track your workouts,
+                Get fit with our easy-to-use fitness app. Track your activitys,
                 plan your meals, and connect with others on their fitness
                 journey.
               </p>

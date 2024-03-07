@@ -12,7 +12,7 @@ const Header = () => {
   const today = new Date();
   const displayDate =
     date?.toDateString() === today.toDateString()
-      ? `Today's Workouts`
+      ? `Today's Activity`
       : date?.toDateString();
 
   return (
@@ -23,17 +23,17 @@ const Header = () => {
       <div className="flex items-center gap-4 md:gap-2 lg:gap-4">
         {/* <Button className="rounded-full text-xl" size="icon" variant="ghost">
           <SearchIcon />
-          <span className="sr-only">Search workouts</span>
+          <span className="sr-only">Search activitys</span>
         </Button>
         <Button className="rounded-full text-xl" size="icon" variant="ghost">
           <FilterIcon />
-          <span className="sr-only">Filter workouts</span>
+          <span className="sr-only">Filter activitys</span>
         </Button> */}
         <CalendarButton date={date} setDate={setDate} />
-        <Link href="/create-new-workout">
+        <Link href="/create-new-activity">
           <Button className="rounded-full text-xl" size="icon" variant="ghost">
             <PlusIcon />
-            <span className="sr-only">Add new workout</span>
+            <span className="sr-only">Add new activity</span>
           </Button>
         </Link>
       </div>

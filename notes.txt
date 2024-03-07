@@ -11,7 +11,7 @@ Look into t3 and zod
 add testing
 
 
-Could add equipment to the workout
+Could add equipment to the activity
 add option to add a alternative if you don't have the equipment at the exact time
 
 
@@ -20,5 +20,5 @@ add option to add a alternative if you don't have the equipment at the exact tim
 
 
 
-
+A calendar view would be good but should that just be its own page or something you can do on the activitys page
 

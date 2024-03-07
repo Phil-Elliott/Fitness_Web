@@ -32,3 +32,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     </ClerkProvider>
   );
 }
+
+/*
+
+- start by creating a template activity
+- then a template activity with a cardio
+- then a template cardio
+- then a routine for activitys and cardios 
+- then a activity on the fly
+- then completing those activitys and cardios
+
+*/

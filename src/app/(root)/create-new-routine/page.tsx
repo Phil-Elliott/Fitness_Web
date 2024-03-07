@@ -25,10 +25,10 @@ const CreateNewRoutine = () => {
             />
           </div>
           <div className="space-y-4">
-            <h2 className="text-xl font-semibold">Workouts</h2>
+            <h2 className="text-xl font-semibold">activitys</h2>
             <div className="space-y-4">
               <Button className="w-full" variant="outline">
-                Add a Workout
+                Add a activity
               </Button>
             </div>
           </div>
@@ -45,6 +45,6 @@ export default CreateNewRoutine;
 
 /*
 
-Copy the style of the create new workout page
+Copy the style of the create new activity page
 
 */

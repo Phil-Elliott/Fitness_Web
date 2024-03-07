@@ -1,14 +1,14 @@
 export const headerLinks = [
   {
-    route: "workouts",
-    name: "Workouts",
+    route: "activity",
+    name: "Activity",
   },
   {
     route: "routines",
     name: "Routines",
   },
-  // {
-  //   route: "goals",
-  //   name: "Goals",
-  // },
+  {
+    route: "schedule",
+    name: "Schedule",
+  },
 ];
