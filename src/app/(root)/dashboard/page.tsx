@@ -1,10 +1,10 @@
+import FitnessCard from "@/components/home/FitnessCard";
+import Link from "next/link";
+import { auth, currentUser } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
 import { CalendarIcon, ClockIcon, FlagIcon } from "@/constants/icons";
-import Link from "next/link";
-import FitnessCard from "@/components/home/FitnessCard";
-import { auth, currentUser } from "@clerk/nextjs";
 
-async function getData(
+async function getUserData(
   token: string | null,
   id: string | undefined,
   email: string | undefined,
@@ -36,7 +36,7 @@ const Dashboard = async () => {
   const { getToken } = auth();
   const token = await getToken();
   const user = await currentUser();
-  const data = await getData(
+  const userData = await getUserData(
     token,
     user?.id,
     user!.emailAddresses[0].emailAddress,
@@ -52,8 +52,8 @@ const Dashboard = async () => {
         <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
           {`Let's get moving and achieve your fitness goals together!`}
         </p>
-        <Link href="/create-new-workout">
-          <Button variant="outline">Create a New Workout</Button>
+        <Link href="/create-new-activity">
+          <Button variant="outline">Start a New Workout</Button>
         </Link>
       </section>
       <section className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -84,20 +84,20 @@ export default Dashboard;
 const fitnessCardsData = [
   {
     title: "Current Plan",
-    value: "Full Body Workout",
+    value: "Full Body activity",
     description: "4 weeks program",
     icon: <CalendarIcon className="w-4 h-4 text-gray-500 dark:text-gray-400" />,
   },
   {
-    title: "Next Workout",
+    title: "Next activity",
     value: "Back and Chest",
     description: "Wednesday",
     icon: <FlagIcon className="w-4 h-4 text-gray-500 dark:text-gray-400" />,
   },
   {
-    title: "Recent Workouts",
+    title: "Recent activitys",
     value: "5",
-    description: "Workouts this week",
+    description: "activitys this week",
     icon: <ClockIcon className="w-4 h-4 text-gray-500 dark:text-gray-400" />,
   },
 ];

@@ -8,15 +8,15 @@ import {
 } from "@/components/ui/card";
 import { ActivityIcon } from "@/constants/icons";
 
-type WorkoutInfoCardProps = {
+type activityInfoCardProps = {
   title: string;
   description: string;
 };
 
-const WorkoutInfoCard = ({ title, description }: WorkoutInfoCardProps) => {
+const activityInfoCard = ({ title, description }: activityInfoCardProps) => {
   return (
     <Link
-      href="/display-past-workout"
+      href="/display-past-activity"
       className="hover:shadow-lg transition-shadow duration-200 ease-in-out"
     >
       <Card>
@@ -32,16 +32,16 @@ const WorkoutInfoCard = ({ title, description }: WorkoutInfoCardProps) => {
   );
 };
 
-export default WorkoutInfoCard;
+export default activityInfoCard;
 
 /*
 To do
-2) Fix link to individual workout once setup
+2) Fix link to individual activity once setup
 
 
 Consider
 1) Change play button
-2) Chang icons based on type of workout
+2) Chang icons based on type of activity
 3) 
 
 
@@ -50,6 +50,6 @@ Consider
 {
   /* <Button className="ml-auto" size="icon" variant="ghost">
           <PlayIcon className="w-4 h-4" />
-          <span className="sr-only">Start workout</span>
+          <span className="sr-only">Start activity</span>
         </Button> */
 }

@@ -113,12 +113,12 @@ const Settings = () => {
             <CardContent>
               <form className="flex flex-col gap-4">
                 <div className="flex items-center space-x-2">
-                  <Checkbox defaultChecked id="workout" />
+                  <Checkbox defaultChecked id="activity" />
                   <label
                     className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    htmlFor="workout"
+                    htmlFor="activity"
                   >
-                    Workout reminders
+                    activity reminders
                   </label>
                 </div>
                 <div className="flex items-center space-x-2">
