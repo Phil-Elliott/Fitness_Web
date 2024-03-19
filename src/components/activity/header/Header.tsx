@@ -30,7 +30,7 @@ const Header = () => {
           <span className="sr-only">Filter activitys</span>
         </Button> */}
         <CalendarButton date={date} setDate={setDate} />
-        <Link href="/create-new-activity">
+        <Link href="/active-activity">
           <Button className="rounded-full text-xl" size="icon" variant="ghost">
             <PlusIcon />
             <span className="sr-only">Add new activity</span>

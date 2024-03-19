@@ -53,7 +53,7 @@ const Dashboard = async () => {
           {`Let's get moving and achieve your fitness goals together!`}
         </p>
         <Link href="/create-new-activity">
-          <Button variant="outline">Create a New activity</Button>
+          <Button variant="outline">Start a New Workout</Button>
         </Link>
       </section>
       <section className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
