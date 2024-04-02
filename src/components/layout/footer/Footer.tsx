@@ -3,7 +3,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="py-4 w-full px-4 md:px-6 border-gray-200 border-t">
+    <footer className="py-4 w-full px-4 md:px-6 border-gray-200 border-t pb-20 sm:pb-4">
       <div className="container mx-auto flex justify-between items-center flex-col sm:flex-row gap-2">
         <p className="text-xs text-gray-500 dark:text-gray-400">
           © 2024 Fitmax. All rights reserved.
