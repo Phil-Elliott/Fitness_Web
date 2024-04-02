@@ -1,4 +1,5 @@
-import { FaHome, FaCog, FaRunning, FaList } from "react-icons/fa"; // Import icons as needed
+import { FaHome, FaCog, FaList } from "react-icons/fa";
+import { FiActivity } from "react-icons/fi";
 
 export const responsiveNavLinks = [
   {
@@ -7,9 +8,9 @@ export const responsiveNavLinks = [
     icon: FaHome,
   },
   {
-    route: "/activity",
-    name: "Activity",
-    icon: FaRunning,
+    route: "/exercises",
+    name: "Exercises",
+    icon: FiActivity,
   },
   {
     route: "/routines",

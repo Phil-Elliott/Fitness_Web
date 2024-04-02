@@ -42,3 +42,11 @@ const Header = () => {
 };
 
 export default Header;
+
+/*
+
+- Could use a dropdown for the plus icon
+      - Could show options (log workout, start new workout, plan workout)
+
+
+*/

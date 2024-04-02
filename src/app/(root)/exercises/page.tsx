@@ -1,8 +1,8 @@
-import Header from "@/components/activity/header/Header";
-import ActivityInfoCard from "@/components/activity/ActivityInfoCard";
+import Header from "@/components/exercises/header/Header";
+import ExercisesInfoCard from "@/components/exercises/ExercisesInfoCard";
 import { auth } from "@clerk/nextjs";
 
-async function getActivityData(token: string | null) {
+async function getExercisesData(token: string | null) {
   const res = await fetch("http://localhost:3000/api/v1/workout", {
     method: "GET",
     headers: {
@@ -12,16 +12,16 @@ async function getActivityData(token: string | null) {
   });
 
   if (!res.ok) {
-    console.log("Failed to fetch activity data");
+    console.log("Failed to fetch exercises data");
   }
 
   return res.json();
 }
 
-const Activity = async () => {
+const Exercises = async () => {
   const { getToken } = auth();
   const token = await getToken();
-  const activityData = await getActivityData(token);
+  const exercisesData = await getExercisesData(token);
 
   return (
     <div className="flex flex-col w-full">
@@ -29,31 +29,31 @@ const Activity = async () => {
       <main className="flex flex-1 flex-col gap-4 py-4 md:gap-8 md:py-10">
         <span className="text-2xl font-bold">Continue</span>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full">
-          {activities.map((activity) => (
-            <ActivityInfoCard
-              key={activity.id}
-              title={activity.title}
-              description={activity.description}
+          {activities.map((exercises) => (
+            <ExercisesInfoCard
+              key={exercises.id}
+              title={exercises.title}
+              description={exercises.description}
             />
           ))}
         </div>
         <span className="text-2xl font-bold">Upcoming</span>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full">
-          {activities.map((activity) => (
-            <ActivityInfoCard
-              key={activity.id}
-              title={activity.title}
-              description={activity.description}
+          {activities.map((exercises) => (
+            <ExercisesInfoCard
+              key={exercises.id}
+              title={exercises.title}
+              description={exercises.description}
             />
           ))}
         </div>
         <span className="text-2xl font-bold">Finished</span>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full">
-          {activities.map((activity) => (
-            <ActivityInfoCard
-              key={activity.id}
-              title={activity.title}
-              description={activity.description}
+          {activities.map((exercises) => (
+            <ExercisesInfoCard
+              key={exercises.id}
+              title={exercises.title}
+              description={exercises.description}
             />
           ))}
         </div>
@@ -62,7 +62,7 @@ const Activity = async () => {
   );
 };
 
-export default Activity;
+export default Exercises;
 
 const activities = [
   {

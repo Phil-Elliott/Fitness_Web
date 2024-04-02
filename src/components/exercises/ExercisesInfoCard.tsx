@@ -8,15 +8,15 @@ import {
 } from "@/components/ui/card";
 import { ActivityIcon } from "@/constants/icons";
 
-type activityInfoCardProps = {
+type exercisesInfoCardProps = {
   title: string;
   description: string;
 };
 
-const activityInfoCard = ({ title, description }: activityInfoCardProps) => {
+const ExercisesInfoCard = ({ title, description }: exercisesInfoCardProps) => {
   return (
     <Link
-      href="/display-past-activity"
+      href="/display-past-exercises"
       className="hover:shadow-lg transition-shadow duration-200 ease-in-out"
     >
       <Card>
@@ -32,7 +32,7 @@ const activityInfoCard = ({ title, description }: activityInfoCardProps) => {
   );
 };
 
-export default activityInfoCard;
+export default ExercisesInfoCard;
 
 /*
 To do
