@@ -1,6 +1,6 @@
 import { IoFilter, IoFitness, IoCameraOutline } from "react-icons/io5";
 import { IoIosSearch } from "react-icons/io";
-import { FaPlus } from "react-icons/fa";
+import { FaPlus, FaRedo, FaClipboardList } from "react-icons/fa";
 import { FiActivity } from "react-icons/fi";
 import {
   CiCalendar,
@@ -10,6 +10,7 @@ import {
   CiSettings,
 } from "react-icons/ci";
 import { GoSignOut } from "react-icons/go";
+import { FaPencil } from "react-icons/fa6";
 
 export const SearchIcon = IoIosSearch;
 export const FilterIcon = IoFilter;
@@ -23,3 +24,6 @@ export const SettingsIcon = CiSettings;
 export const SignOutIcon = GoSignOut;
 export const FitnessIcon = IoFitness;
 export const CameraIcon = IoCameraOutline;
+export const PencilIcon = FaPencil;
+export const ClipboardListIcon = FaClipboardList;
+export const RedoIcon = FaRedo;
