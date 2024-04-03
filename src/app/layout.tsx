@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           )}
         >
           <Header />
-          <div className="pt-20 pb-16 flex-grow container mx-auto">
+          <div className="pt-10 sm:pt-20 pb-16 flex-grow container mx-auto">
             {children}
           </div>
           <Footer />

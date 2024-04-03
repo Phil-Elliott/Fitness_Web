@@ -7,6 +7,15 @@ const ActiveActivity = () => {
 export default ActiveActivity;
 
 /*
+Should start with a quick form
+- Name of activity
+- Description of activity
+- Type of activity (cardio, strength, etc.)
+- Use timers 
+- Is it for now or later or past workout that you need to log
+
+
+
 
 - Show activity details (name, description, etc.)
 - show list of exercises
