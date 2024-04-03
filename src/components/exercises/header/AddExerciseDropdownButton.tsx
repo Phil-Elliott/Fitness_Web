@@ -49,7 +49,10 @@ const AddExerciseDropdownButton = () => {
 export default AddExerciseDropdownButton;
 
 /*
-
-figure out what each link will take you to
-
+(exercises)
+- exercises (provides all of the exercises, a calendar, and a search bar, and a button to do one of the below)
+- exercise (displays a past exercise) - click on edit can take you to log-exercise
+- active-exercise (used for planned, and repeated exercises - could provide timers and a special focus mode)
+- plan-exercise (provide user options to create an exercise without logging it)
+- log-exercise (provide user options to log an exercise that they already did or maybe they dont like the foucus mode and can log as they do it)
 */
