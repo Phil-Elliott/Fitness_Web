@@ -12,7 +12,6 @@ import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
@@ -27,27 +26,25 @@ const AddExerciseDropdownButton = () => {
           <span className="sr-only">Add new activity</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="">
-        <DropdownMenuGroup>
-          <Link href="/log-exercise">
-            <DropdownMenuItem>
-              <PencilIcon className="mr-3 h-3 w-3" />
-              <span>Log Exercise</span>
-            </DropdownMenuItem>
-          </Link>
-          <Link href="/plan-exercise">
-            <DropdownMenuItem>
-              <ClipboardListIcon className="mr-3 h-3 w-3" />
-              <span>Plan Exercise</span>
-            </DropdownMenuItem>
-          </Link>
-          <Link href="/active-exercise">
-            <DropdownMenuItem>
-              <RedoIcon className="mr-3 h-3 w-3" />
-              <span>Repeat Exercise</span>
-            </DropdownMenuItem>
-          </Link>
-        </DropdownMenuGroup>
+      <DropdownMenuContent>
+        <Link href="/log-exercise">
+          <DropdownMenuItem className="cursor-pointer">
+            <PencilIcon className="mr-3 h-3 w-3" />
+            <span>Log Exercise</span>
+          </DropdownMenuItem>
+        </Link>
+        <Link href="/plan-exercise">
+          <DropdownMenuItem className="cursor-pointer">
+            <ClipboardListIcon className="mr-3 h-3 w-3" />
+            <span>Plan Exercise</span>
+          </DropdownMenuItem>
+        </Link>
+        <Link href="/active-exercise">
+          <DropdownMenuItem className="cursor-pointer">
+            <RedoIcon className="mr-3 h-3 w-3" />
+            <span>Repeat Exercise</span>
+          </DropdownMenuItem>
+        </Link>
       </DropdownMenuContent>
     </DropdownMenu>
   );
