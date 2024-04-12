@@ -11,6 +11,8 @@ import {
 } from "react-icons/ci";
 import { GoSignOut } from "react-icons/go";
 import { FaPencil } from "react-icons/fa6";
+import { BiHide } from "react-icons/bi";
+import { MdNotes } from "react-icons/md";
 
 export const SearchIcon = IoIosSearch;
 export const FilterIcon = IoFilter;
@@ -27,3 +29,5 @@ export const CameraIcon = IoCameraOutline;
 export const PencilIcon = FaPencil;
 export const ClipboardListIcon = FaClipboardList;
 export const RedoIcon = FaRedo;
+export const HideIcon = BiHide;
+export const NotesIcon = MdNotes;

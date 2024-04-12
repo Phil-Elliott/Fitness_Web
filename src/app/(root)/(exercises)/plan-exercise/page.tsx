@@ -11,9 +11,9 @@ import {
   Select,
 } from "@/components/ui/select";
 
-import Exercise from "@/components/create-new-activity/Exercise";
+import Exercise from "@/components/create-new-exercise/Exercise";
 
-const CreateNewActivity = () => {
+const CreateNewExercise = () => {
   return (
     <main className="w-full max-w-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <div className="space-y-6">
@@ -71,7 +71,7 @@ const CreateNewActivity = () => {
   );
 };
 
-export default CreateNewActivity;
+export default CreateNewExercise;
 
 /*
 components
