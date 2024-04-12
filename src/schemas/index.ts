@@ -10,5 +10,4 @@ export * from "./TemplateWorkoutsSchema";
 export * from "./UserSchema";
 export * from "./WorkoutCardioSchema";
 export * from "./WorkoutExerciseSetsSchema";
-export * from "./WorkoutExercisesSchema";
 export * from "./WorkoutSchema";
